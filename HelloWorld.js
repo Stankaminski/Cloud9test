@@ -2,7 +2,7 @@ console.log('Hello world');
 
 require("http").createServer( function(req,res){
     res.writeHead(200);
-    res.end('Hello World');
+    res.end('Hello ' + req.headers['user-agent'] );
 }).listen(process.env.PORT);
 
 
