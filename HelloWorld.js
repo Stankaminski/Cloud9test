@@ -1,6 +1,6 @@
 require("http").createServer( function(req,res){
     res.writeHead(200);
-    res.end('Hello ' + req.headers['accept-encoding'] );
+    res.end('Hello ' + req.headers['accept-language'] );
 }).listen(process.env.PORT);
 
 
